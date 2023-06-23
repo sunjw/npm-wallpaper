@@ -6,17 +6,28 @@ const childProcess = require('child_process');
 const execFile = promisify(childProcess.execFile);
 
 // Binary source → https://github.com/sindresorhus/win-wallpaper
-const binary = path.join(__dirname, 'windows-wallpaper.exe');
+const binary = path.join(__dirname, 'windows-wallpaper-x86-64.exe');
 
 exports.get = async () => {
-	const {stdout} = await execFile(binary);
+	const arguments_ = [
+		'get',
+	];
+
+	const {stdout} = await execFile(binary, arguments_);
 	return stdout.trim();
 };
 
-exports.set = async imagePath => {
+exports.set = async (imagePath, {scale = 'fill'} = {}) => {
 	if (typeof imagePath !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	await execFile(binary, [path.resolve(imagePath)]);
+	const arguments_ = [
+		'set',
+		path.resolve(imagePath),
+		'--scale',
+		scale,
+	];
+
+	await execFile(binary, arguments_);
 };
