@@ -1,5 +1,5 @@
 declare namespace wallpaper {
-	interface GetOptions {
+	type GetOptions = {
 		/**
 		__macOS only.__
 
@@ -10,9 +10,9 @@ declare namespace wallpaper {
 		@default 'main'
 		*/
 		readonly screen?: 'all' | 'main' | number;
-	}
+	};
 
-	interface SetOptions {
+	type SetOptions = {
 		/**
 		__macOS only.__
 
@@ -38,7 +38,7 @@ declare namespace wallpaper {
 		@default 'span' for Windows
 		*/
 		readonly scale?: 'auto' | 'fill' | 'fit' | 'stretch' | 'center' | 'tile' | 'span';
-	}
+	};
 }
 
 // eslint-disable-next-line no-redeclare
