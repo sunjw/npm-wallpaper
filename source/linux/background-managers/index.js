@@ -12,5 +12,6 @@ module.exports = {
 	pcmanfm: require('./pcmanfm.js'),
 	qdbus: require('./qdbus.js'),
 	setroot: require('./setroot.js'),
-	xfconfquery: require('./xfconf-query.js')
+	xfconfquery: require('./xfconf-query.js'),
+	swaybg: require('./swaybg.js')
 };
