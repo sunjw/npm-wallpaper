@@ -13,5 +13,6 @@ module.exports = {
 	qdbus: require('./qdbus.js'),
 	setroot: require('./setroot.js'),
 	xfconfquery: require('./xfconf-query.js'),
-	swaybg: require('./swaybg.js')
+	swaybg: require('./swaybg.js'),
+	swww: require('./swww.js')
 };
