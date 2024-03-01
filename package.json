@@ -4,11 +4,14 @@
 	"description": "Manage the desktop wallpaper",
 	"license": "MIT",
 	"repository": "sunjw/npm-wallpaper",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"types": "./index.d.ts",
+	"sideEffects": false,
 	"engines": {
 		"node": ">=16"
 	},

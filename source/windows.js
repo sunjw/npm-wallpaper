@@ -5,7 +5,7 @@ const childProcess = require('child_process');
 
 const execFile = promisify(childProcess.execFile);
 
-// Binary source → https://github.com/sindresorhus/win-wallpaper
+// Binary source → https://github.com/sindresorhus/windows-wallpaper
 const binary = path.join(__dirname, 'windows-wallpaper-x86-64.exe');
 
 exports.get = async () => {
