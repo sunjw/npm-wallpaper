@@ -13,7 +13,7 @@ async function initialize() {
 
 		throw new Error(`Failed to set image for swww: ${error.stderr}`);
 	}
-};
+}
 
 exports.get = async () => {
 	await initialize();
