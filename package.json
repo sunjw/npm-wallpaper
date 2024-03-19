@@ -1,9 +1,9 @@
 {
-	"name": "wallpaper",
+	"name": "@sunjw8888/wallpaper",
 	"version": "5.0.1",
 	"description": "Manage the desktop wallpaper",
 	"license": "MIT",
-	"repository": "sindresorhus/wallpaper",
+	"repository": "sunjw/npm-wallpaper",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
